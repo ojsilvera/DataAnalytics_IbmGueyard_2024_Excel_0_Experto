@@ -4,3 +4,4 @@ Curso de excel de cero a experto, que se desarrollo como parte del bootcamp de a
 con IBM, entre agosto y noviembre del año 2024
 
 - Seccion_1 Atajos
+- Seccion_2 Tips para trabajar mejor
