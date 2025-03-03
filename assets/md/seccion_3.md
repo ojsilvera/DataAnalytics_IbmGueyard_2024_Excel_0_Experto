@@ -2,12 +2,6 @@
 
 ## Primeras formulas
 
-Aquí tienes un resumen estructurado para facilitar su comprensión:
-
----
-
-## **Operaciones Básicas en Excel**
-
 ### **Formas de Realizar Operaciones en Excel**
 
 | **Método** | **Descripción** | **Ventajas** | **Desventajas** |
@@ -65,3 +59,76 @@ Si queremos calcular el total de ventas más comisiones en la celda `D13`, podem
 - Usar referencias a celdas para mantener la actualización automática.
 - Usar la función `SUMA` para mayor eficiencia, especialmente con rangos grandes.
 - En caso de celdas dispersas, utilizar `SUMA` con referencias separadas.
+
+## Operaciones basicas
+
+### **Operaciones Matemáticas Básicas**
+
+En Excel, se pueden realizar todas las operaciones matemáticas básicas como en una hoja de papel:
+
+| **Operación** | **Símbolo en Excel** | **Ejemplo** | **Resultado** |
+|--------------|---------------------|------------|-------------|
+| **Suma** | `+` | `=5+3` | 8 |
+| **Resta** | `-` | `=10-4` | 6 |
+| **Multiplicación** | `*` | `=6*2` | 12 |
+| **División** | `/` | `=9/3` | 3 |
+| **Cociente (división entera)** | `COCIENTE` | `=COCIENTE(9;2)` | 4 |
+| **Porcentaje** | `%` | `=50%*200` | 100 |
+
+---
+
+### **Concatenación en Excel**
+
+Concatenar significa unir textos o números en una misma celda.
+
+| **Método** | **Fórmula** | **Resultado** |
+|-----------|------------|--------------|
+| **Usando CONCATENAR** | `=CONCATENAR("Inés";" "; "Pérez")` | `Inés Pérez` |
+| **Usando el operador &** | `="Inés" & " " & "Pérez"` | `Inés Pérez` |
+| **Unir texto con números** | `="Factura " & A2` | `Factura 358` |
+
+📌 **Nota:** Si se concatenan números con texto, Excel los tratará como texto, lo que puede generar errores en cálculos.
+
+---
+
+### **Identificar si un valor es texto**
+
+Para verificar si una celda tiene formato de texto, se usa la función `ESTEXTO`.
+
+| **Fórmula** | **Resultado** |
+|------------|-------------|
+| `=ESTEXTO(A1)` | `VERDADERO` (si A1 es texto) |
+| `=ESTEXTO(A2)` | `FALSO` (si A2 es número) |
+
+⚠ **Precaución**: Si intentamos sumar un número con un texto, Excel dará error.
+
+---
+
+### **Ejemplo de Cálculo de Porcentaje**
+
+Para calcular un porcentaje de un monto de ventas:
+
+1. **Fórmula básica:**
+
+   ```excel
+   =Monto * Porcentaje
+   ```
+
+2. **Ejemplo:**
+
+   Si `A2 = 500` y `B2 = 10%`, entonces:
+
+   ```excel
+   =A2 * B2
+   ```
+
+   📌 **Resultado:** `50` (el 10% de 500).
+
+---
+
+📢 **Conclusión:**
+
+- Excel permite realizar operaciones matemáticas básicas de forma eficiente.
+- Se pueden unir textos y números con `CONCATENAR` o `&`, pero los números se convertirán en texto.
+- La función `ESTEXTO` ayuda a identificar si un valor es tratado como texto.
+- Para calcular porcentajes, se multiplica el monto por el porcentaje deseado.
