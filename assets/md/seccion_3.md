@@ -132,3 +132,78 @@ Para calcular un porcentaje de un monto de ventas:
 - Se pueden unir textos y números con `CONCATENAR` o `&`, pero los números se convertirán en texto.
 - La función `ESTEXTO` ayuda a identificar si un valor es tratado como texto.
 - Para calcular porcentajes, se multiplica el monto por el porcentaje deseado.
+
+## Fijacion
+
+Aquí tienes un resumen estructurado del tema de **fijaciones en Excel**, utilizando tablas y listas para una mejor comprensión:
+
+---
+
+## **Fijaciones en Excel**
+La fijación en Excel es clave para trabajar con referencias absolutas y relativas en fórmulas. Permite evitar errores al arrastrar fórmulas.
+
+### 📌 **Tipos de Referencias en Excel**
+
+| **Tipo de Referencia** | **Ejemplo** | **Descripción** |
+|----------------|------------|--------------------------|
+| **Relativa** | `=A1+B1` | Cambia automáticamente al arrastrar la fórmula. |
+| **Absoluta** | `=$A$1+$B$1` | No cambia al arrastrar la fórmula, mantiene fija la celda. |
+| **Mixta (columna fija)** | `=$A1+B1` | La columna no cambia, pero la fila sí. |
+| **Mixta (fila fija)** | `=A$1+B$1` | La fila no cambia, pero la columna sí. |
+
+---
+
+## **Ejemplo 1: Cálculo de Interés con Fijación Absoluta**
+
+1. **Fórmula incorrecta:**
+
+   ```excel
+   =B2*H10
+   ```
+
+   ❌ Al arrastrar, Excel cambia `H10` a `H11`, causando errores.
+
+2. **Corrección con fijación absoluta:**
+
+   ```excel
+   =B2*$H$10
+   ```
+
+   ✅ Ahora `H10` se mantiene fija al arrastrar la fórmula.
+
+🔹 **Cómo fijar una celda en Excel**:
+
+- Presionar `F4` al escribir la celda (`H10`) para agregar `$` automáticamente.
+
+---
+
+## **Ejemplo 2: Multiplicación de Diferentes Capitales y Tasas**
+
+1. **Fórmula incorrecta:**
+
+   ```excel
+   =I11*J10
+   ```
+
+   ❌ Al arrastrar, las referencias se desajustan.
+
+2. **Corrección con fijaciones mixtas:**
+
+| **Celda** | **Fórmula** | **Explicación** |
+|----------|-----------|---------------|
+| **Capital (columna fija, fila variable)** | `=$I11*J10` | Se fija la columna `I` para que al arrastrar no cambie. |
+| **Tasa (columna variable, fila fija)** | `=I11*$J$10` | Se fija la fila `10` para que no cambie al arrastrar. |
+
+🔹 **Reglas clave:**
+
+- `$` **antes de la columna** → Mantiene fija la columna.
+- `$` **antes de la fila** → Mantiene fija la fila.
+
+---
+
+### ✅ **Resumen Final**
+
+✔ Usar **`F4`** para fijar celdas fácilmente.
+✔ Aplicar **fijaciones absolutas** cuando una celda debe permanecer igual al arrastrar.
+✔ Aplicar **fijaciones mixtas** cuando solo se debe fijar la fila o la columna.
+✔ Revisar las fórmulas con `F2` para detectar errores en referencias.
