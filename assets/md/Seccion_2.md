@@ -85,9 +85,9 @@ Permite fijar títulos o columnas para facilitar la visualización de datos al d
 
 | Acción | Pasos |
 |---|---|
-| **Fijar filas** | 1. Selecciona la fila inmediatamente debajo de la que quieres inmovilizar. <br> 2. Ve a la pestaña **Vista** → **Inmovilizar paneles** → **Inmovilizar filas**. |
-| **Fijar columnas** | 1. Selecciona la columna inmediatamente a la derecha de la que quieres inmovilizar. <br> 2. Ve a **Vista** → **Inmovilizar paneles** → **Inmovilizar Columnass**. |
-| **Fijar filas y columnas simultáneamente** | 1. Selecciona la celda **inmediatamente siguiente** a la fila y columna que deseas inmovilizar. <br> 2. Ve a **Vista** → **Inmovilizar paneles** → **Inmovilizar paneles**. |
+| **Fijar filas** | 1. Selecciona la fila inmediatamente debajo de la que quieres inmovilizar. `<br>` 2. Ve a la pestaña **Vista** → **Inmovilizar paneles** → **Inmovilizar filas**. |
+| **Fijar columnas** | 1. Selecciona la columna inmediatamente a la derecha de la que quieres inmovilizar. `<br>` 2. Ve a **Vista** → **Inmovilizar paneles** → **Inmovilizar Columnass**. |
+| **Fijar filas y columnas simultáneamente** | 1. Selecciona la celda **inmediatamente siguiente** a la fila y columna que deseas inmovilizar. `<br>` 2. Ve a **Vista** → **Inmovilizar paneles** → **Inmovilizar paneles**. |
 | **Desbloquear filas o columnas** | **Vista** → **Inmovilizar paneles** → **Movilizar paneles**. |
 
 ---
