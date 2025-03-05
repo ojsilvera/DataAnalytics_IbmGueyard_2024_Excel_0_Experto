@@ -5,3 +5,5 @@ con IBM, entre agosto y noviembre del año 2024
 
 - [Seccion_1 Atajos](./assets/md/seccion_1.md)
 - [Seccion 2 - Tips para trabajar mejor](./assets/md/Seccion_2.md)
+- [Seccion 3 - Fijacion y formulas](./assets/md/Seccion_2.md)
+- [Seccion 4 - Tablas](./assets/md/Seccion_2.md)
