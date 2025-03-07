@@ -140,6 +140,7 @@ Aquí tienes un resumen estructurado del tema de **fijaciones en Excel**, utiliz
 ---
 
 ## **Fijaciones en Excel**
+
 La fijación en Excel es clave para trabajar con referencias absolutas y relativas en fórmulas. Permite evitar errores al arrastrar fórmulas.
 
 ### 📌 **Tipos de Referencias en Excel**
